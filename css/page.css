@@ -1,0 +1,272 @@
+*{
+    padding:0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    font-size: inherit;
+}
+ul,ol{
+    list-style-type: none;
+}
+body{
+    background: #fff;
+    font-family: 'PingHei', 'STHeiti SC','Simhei';
+    line-height: 1;
+    font-size: 16px;
+    color:#333;
+    -webkit-text-size-adjust: none;
+}
+.content{
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 14px;
+}
+.e-sub-title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.e-sub-title span{
+    display: block;
+}
+.e-sub-title :last-child{
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ccc;
+}
+.e-block{
+    padding: 40px 0;
+}
+@media (max-width:640px){
+    .e-sub-title{
+        text-align: left;
+        font-size: 20px;
+    }
+    .e-sub-title span{
+        display: inline;
+    }
+    .e-sub-title :last-child{
+        font-size: 14px;
+    }
+    .e-block{
+        padding: 20px 0;
+    }
+}
+/* 内容边界 */
+.boundary{
+    position: relative;
+}
+@media (max-width:768px){
+    .boundary{
+        margin: 0 20px;
+    }
+}
+@media (min-width:769px) and (max-width:1040px) {
+    .boundary{
+        margin: 0 30px;
+    }
+}
+@media (min-width:1040px){
+    .boundary{
+        max-width: 980px;
+        margin:0 auto;
+    }
+}
+/* 头部 */
+.e-header{
+    border-bottom: solid #d6d6d6 1px;
+    padding: 15px 0;
+}
+.e-header-me{
+    font-size: 40px;
+}
+.e-header-job{
+    color:#ccc;
+    font-size: 20px;
+}
+.e-header-addr{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.e-header-addr div{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@media (max-width:640px){
+    .e-header-addr{
+        margin-top: 10px;
+        position: relative;
+    }
+    .e-header-addr div{
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+/* 技术模块 */
+
+.e-frontend-item{
+    height: 35px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 35px; 
+    border-left: 3px solid;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.e-frontend-list :last-child{
+    margin-bottom: 0;
+}
+.e-frontend-itme,.blue{
+    color: #2a7da9;
+    border-color:#3498db;
+    background-color: #d6efff;
+}
+.e-frontend-itme,.green{
+    color: #6e9c0f;
+    border-color:#80bd01;
+    background-color:#eaf6d0;
+}
+.e-frontend-itme,.orange{
+    color: #ff742a;
+    border-color:#fdbc40;
+    background-color:#fff6dd;
+}
+
+@media (max-width:640px){
+    .e-frontend-item{
+        height: 30px;
+        font-size: 16px;
+        line-height: 30px; 
+        border-left: 3px solid;
+        padding-left: 10px;
+        margin: 15px 0;
+    }
+}
+/* 关于我 */
+.e-about{
+    background-color: #f9f9f9;
+}
+
+.e-about-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.e-about-item{
+    width: 48%;
+}
+.e-about-item div :first-child{
+    margin-right: 3px;
+}
+
+.e-about-item div{
+    padding: 15px;
+    display: flex;
+    min-height: 90px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px #ccc;
+}
+@media (max-width:640px){
+    .e-about-list{
+        flex-direction:column;
+    }
+    .e-about-item{
+        width: 100%;
+    }
+    .e-about-item div{
+        min-height: 0px;
+    }
+}
+
+/* 工作 */
+.e-jobs{
+    background-color: #f9f9f9;
+}
+.e-jobs-list{
+    /* padding-bottom: 20px; */
+}    
+.e-jobs-item{
+    position: relative;
+    margin-left: 135px;
+    border-left: #ccc 4px solid;
+    padding-bottom: 20px;
+}
+.e-jobs-item img{
+    position: absolute;
+    width: 120px;
+    left: -135px;
+}
+.e-jobs-time{
+    line-height: 30px;
+    position: relative;
+    padding-left: 10px;
+    color:#2a7da9;
+}
+.e-jobs-point{
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: #2a7da9;
+    position: absolute;
+    border: 4px solid #fff;
+    top:5px;
+    left:-12px;
+}
+.e-jobs-content{
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+.e-jobs-content li{
+    list-style: disc;
+    margin-left: 1.3em;
+}
+
+@media (max-width:640px){
+    .e-jobs-item{
+        margin-left: 0;
+    }
+    .e-jobs-item img{
+        width: 100px;
+        position: relative;
+        margin:10px;
+        left: 0;
+    }
+    .e-jobs-detail{
+        position: relative;
+        left: 0;
+    }
+}
+
+/* 项目经验 */
+.e-project-list li{
+    border: 2px dashed #eee;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.e-project-list h3{
+    font-size: 1.25em;
+    line-height: 2;
+}
+.e-project-list .content{
+    font-size: 16px;
+}
+.e-project-sub-list li{
+    border: none;
+    padding: 0;
+    list-style: disc;
+    margin-left: 1.3em;
+    margin-bottom: 0
+}
+
+
+
+
+
+
