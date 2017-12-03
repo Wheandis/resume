@@ -9,6 +9,10 @@ h1,h2,h3,h4,h5,h6{
 ul,ol{
     list-style-type: none;
 }
+a{
+    text-decoration:none;
+    color: #2a7da9;
+}
 body{
     background: #fff;
     font-family: 'PingHei', 'STHeiti SC','Simhei';
@@ -187,9 +191,6 @@ body{
 .e-jobs{
     background-color: #f9f9f9;
 }
-.e-jobs-list{
-    /* padding-bottom: 20px; */
-}    
 .e-jobs-item{
     position: relative;
     margin-left: 135px;
@@ -250,10 +251,24 @@ body{
     margin-bottom: 30px;
     padding: 10px;
 }
+.e-project-list :last-child{
+    margin-bottom: 0;
+}
+
 .e-project-list h3{
     font-size: 1.25em;
     line-height: 2;
 }
+.e-project-list h3 span{
+    font-size: 0.65em;
+    line-height: 2;
+} 
+.e-project-time{
+    padding: 5px 0;
+    color: #aaa;
+    font-size: 12px;
+}
+
 .e-project-list .content{
     font-size: 16px;
 }
@@ -265,6 +280,41 @@ body{
     margin-bottom: 0
 }
 
+/* 脚部 */
+.e-footer{
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    position: relative;
+}
+.e-footer img{
+    width:100px;
+    height: 100px;
+}
+.e-footer-p{
+    color: #aaa;
+}
+.e-footer-p span{
+    display: block;
+}
+
+.e-footer-lee{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    color: #aaa;
+}
+
+@media screen and (max-width:640px) {
+    .e-footer-p{
+        display: none;
+    }
+}
+@media print{
+    .e-footer-lee{
+        display: none;
+    }
+}
 
 
 
