@@ -45,7 +45,7 @@ body{
 @media (max-width:640px){
     .e-sub-title{
         text-align: left;
-        font-size: 20px;
+        font-size: 25px;
     }
     .e-sub-title span{
         display: inline;
@@ -110,7 +110,9 @@ body{
     }
 }
 /* 技术模块 */
-
+.e-frontend{
+    background-color: #f9f9f9;
+}
 .e-frontend-item{
     height: 35px;
     width: 100%;
@@ -151,39 +153,46 @@ body{
     }
 }
 /* 关于我 */
-.e-about{
-    background-color: #f9f9f9;
-}
+
 
 .e-about-list{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    list-style-type: disc;
 }
 .e-about-item{
-    width: 48%;
+    margin:0 1.3em;
+    line-height: 1.7;
+    border-bottom: 1px dashed #ccc;
 }
-.e-about-item div :first-child{
-    margin-right: 3px;
+.e-about-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.e-about-item div{
+.e-about-college{
     padding: 15px;
-    display: flex;
-    min-height: 90px;
+    width: 40%;
+    margin-right: 20px;
     background-color: #fff;
     margin-bottom: 20px;
     box-shadow: 2px 2px 2px #ccc;
+    line-height: 1.6;
+    color: #666;
 }
+.e-about-college i{
+    font-size: 1.5em;
+    color: #8dc2e6;
+}
+
+
 @media (max-width:640px){
-    .e-about-list{
+    .e-about-main{
         flex-direction:column;
+        align-items: flex-start;
     }
-    .e-about-item{
-        width: 100%;
-    }
-    .e-about-item div{
-        min-height: 0px;
+    .e-about-college{
+        width: 90%;
+        margin-right: 0;
     }
 }
 
